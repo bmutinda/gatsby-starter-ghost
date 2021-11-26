@@ -26,6 +26,10 @@ if (process.env.NODE_ENV === `production` && config.siteUrl === `http://localhos
     throw new Error(`siteUrl can't be localhost and needs to be configured in siteConfig. Check the README.`) // eslint-disable-line
 }
 
+console.log("--settings [start]--")
+console.log(JSON.stringify(ghostConfig, null, 2))
+console.log("--settings [end]--")
+
 /**
 * This is the place where you can tell Gatsby which plugins to use
 * and set them up the way you want.
